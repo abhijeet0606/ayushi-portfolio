@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kumari Ayushi | Sales & Business Development Portfolio</title>
+  <meta name="description" content="Portfolio & Resume of Kumari Ayushi - Sales, Business Development & CRM Professional. PGDM Candidate at IMDR Pune.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: rgba(18, 26, 43, 0.75);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.12);
+      --accent-border: rgba(56, 189, 248, 0.28);
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2.5rem 1rem;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(56, 189, 248, 0.07) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(129, 140, 248, 0.07) 0%, transparent 40%);
+      background-attachment: fixed;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    header {
+      background: var(--card-bg);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 2.5rem 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      padding: 0.35rem 0.9rem;
+      border-radius: 50px;
+      margin-bottom: 1.25rem;
+    }
+    .badge::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, #ffffff 40%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .tagline {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .bio {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 780px;
+      margin-bottom: 1.75rem;
+    }
+    .meta-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.75rem;
+      font-size: 0.88rem;
+      color: #cbd5e1;
+    }
+    .meta-pills span {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--card-border);
+      padding: 0.35rem 0.85rem;
+      border-radius: 8px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      color: var(--text);
+      text-decoration: none;
+      padding: 0.65rem 1.3rem;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    .btn:hover {
+      background: var(--accent);
+      color: #090d16;
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #090d16;
+      border-color: var(--accent);
+    }
+    .quote-box {
+      margin-top: 1.5rem;
+      padding: 1rem 1.25rem;
+      border-left: 3px solid var(--accent);
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 0 12px 12px 0;
+      font-style: italic;
+      color: #cbd5e1;
+      font-size: 0.95rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    @media (min-width: 800px) {
+      .grid {
+        grid-template-columns: 1.9fr 1.1fr;
+      }
+    }
+    section {
+      background: var(--card-bg);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 2.2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.22);
+    }
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .section-num {
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--accent);
+      letter-spacing: 0.05em;
+    }
+    .section-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .experience-item {
+      padding-bottom: 1.75rem;
+      margin-bottom: 1.75rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .experience-item:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+    .exp-date {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 0.25rem;
+    }
+    .exp-role {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .exp-company {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+    .styled-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .styled-list li {
+      position: relative;
+      padding-left: 1.25rem;
+      font-size: 0.92rem;
+      color: #cbd5e1;
+    }
+    .styled-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+    .timeline-item {
+      position: relative;
+      padding-left: 1.25rem;
+      border-left: 2px solid rgba(56, 189, 248, 0.25);
+    }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -6px;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .degree {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .institute {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .edu-meta {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 500;
+      margin-top: 0.2rem;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    .chip {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--card-border);
+      padding: 0.4rem 0.8rem;
+      border-radius: 10px;
+      font-size: 0.85rem;
+      color: #e2e8f0;
+    }
+    .chip-accent {
+      background: var(--accent-soft);
+      border-color: var(--accent-border);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .subgroup {
+      margin-bottom: 1.5rem;
+    }
+    .subgroup-title {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 0.6rem;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.35rem;
+    }
+    .form-control {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--card-border);
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      color: #fff;
+      font-family: inherit;
+      font-size: 0.9rem;
+      outline: none;
+    }
+    .form-control:focus {
+      border-color: var(--accent);
+    }
+    footer {
+      text-align: center;
+      padding: 2.5rem 0 1rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">Open to opportunities · Sales · BD · CRM</div>
+      <h1>Kumari Ayushi</h1>
+      <p class="tagline">Motivated sales professional building trust, understanding people, and turning conversations into business relationships.</p>
+      
+      <p class="bio">
+        A clear communicator who brings curiosity, consistency, and care to every client interaction. Experienced in educational and fintech consulting with an approach combining active listening and practical problem-solving.
+      </p>
+
+      <div class="meta-pills">
+        <span>📍 Based in Pune, India</span>
+        <span>🎓 Currently PGDM · IMDR, Pune</span>
+        <span>🎯 Focus: Client Relationships & Business Growth</span>
+        <span>⚡ Strengths: Communication · Trust · Teamwork · Ownership</span>
+      </div>
+
+      <div class="actions">
+        <a href="mailto:ayushikumari1406@gmail.com" class="btn btn-primary">Contact Me</a>
+        <a href="tel:+916207990122" class="btn">+91 6207990122</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn Profile</a>
+      </div>
+
+      <div class="quote-box">
+        “I enjoy understanding customer needs, building long-term relationships, and contributing to organizational growth.”
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <!-- Experience Section -->
+        <section>
+          <div class="section-header">
+            <span class="section-num">01</span>
+            <h2 class="section-title">Professional Experience</h2>
+          </div>
+
+          <div class="experience-item">
+            <div class="exp-date">December 2025 – July 2026</div>
+            <div class="exp-role">Junior Consultant – Sales</div>
+            <div class="exp-company">StockEdge Fintech Private Limited</div>
+            <ul class="styled-list">
+              <li>Worked closely with clients to understand their needs and provide suitable solutions.</li>
+              <li>Built strong client relationships through clear communication, trust, and timely support.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="exp-date">May 2025 – November 2025</div>
+            <div class="exp-role">Operational Voice</div>
+            <div class="exp-company">CollegeDekho</div>
+            <ul class="styled-list">
+              <li>Guided students through academic and career counselling.</li>
+              <li>Supported students during onboarding and coordinated with partner colleges and stakeholders.</li>
+              <li>Helped maintain smooth operations and provide quality support.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="exp-date">January 2024 – April 2025</div>
+            <div class="exp-role">Business Development Associate</div>
+            <div class="exp-company">House of EdTech</div>
+            <ul class="styled-list">
+              <li>Promoted educational courses to prospective learners and clients.</li>
+              <li>Worked towards sales targets through effective communication and relationship building.</li>
+              <li>Managed lead generation, follow-ups, client consultations, and sales closures.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Education Section -->
+        <section>
+          <div class="section-header">
+            <span class="section-num">02</span>
+            <h2 class="section-title">Education</h2>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="degree">Post Graduate Diploma in Management (PGDM)</div>
+              <div class="institute">Institute of Management Development and Research (IMDR), Pune</div>
+              <div class="edu-meta">Pursuing</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="degree">Bachelor of Business Administration (BBA)</div>
+              <div class="institute">International School of Hospitality Management, Kolkata</div>
+              <div class="edu-meta">2020 – 2023 · 8.19 CGPA</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="degree">Higher Secondary Certificate (HSC)</div>
+              <div class="institute">Loyola Convent School, Ranchi</div>
+              <div class="edu-meta">2019 · 64%</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="degree">Secondary School Certificate (SSC)</div>
+              <div class="institute">Naman Vidya, Hazaribagh</div>
+              <div class="edu-meta">2017 · 7.19 CGPA</div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside>
+        <!-- Toolkit & Skills -->
+        <section>
+          <div class="section-header">
+            <span class="section-num">03</span>
+            <h2 class="section-title">Toolkit & Skills</h2>
+          </div>
+
+          <div class="subgroup">
+            <div class="subgroup-title">Professional Skills</div>
+            <div class="chips">
+              <span class="chip chip-accent">Sales & Business Development</span>
+              <span class="chip chip-accent">Client Relationship Management (CRM)</span>
+              <span class="chip">Effective Communication</span>
+              <span class="chip">Customer Engagement</span>
+              <span class="chip">Leadership</span>
+              <span class="chip">Problem-Solving</span>
+              <span class="chip">Teamwork</span>
+              <span class="chip">Time Management</span>
+            </div>
+          </div>
+
+          <div class="subgroup">
+            <div class="subgroup-title">Technical Skills</div>
+            <div class="chips">
+              <span class="chip">MS Excel</span>
+              <span class="chip">MS Word</span>
+              <span class="chip">MS PowerPoint</span>
+            </div>
+          </div>
+
+          <div class="subgroup">
+            <div class="subgroup-title">Languages</div>
+            <div class="chips">
+              <span class="chip">English</span>
+              <span class="chip">Hindi</span>
+            </div>
+          </div>
+
+          <div class="subgroup" style="margin-bottom: 0;">
+            <div class="subgroup-title">Interests</div>
+            <p style="font-size: 0.9rem; color: #cbd5e1;">Cooking · Travelling</p>
+          </div>
+        </section>
+
+        <!-- Quick Contact Form Draft -->
+        <section>
+          <div class="section-header">
+            <span class="section-num">04</span>
+            <h2 class="section-title">Let's Connect</h2>
+          </div>
+          <form action="mailto:ayushikumari1406@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="3" class="form-control" placeholder="How can I help?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; cursor: pointer;">
+              Open Email Draft
+            </button>
+          </form>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+      <p>© 2026 Kumari Ayushi · Built with intention.</p>
+    </footer>
+  </div>
+</body>
+</html>
